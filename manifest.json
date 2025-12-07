@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Research Assistant (OpenAI)",
+  "description": "Enter a topic, gather page info, run a short multistep research workflow via OpenAI, and get a concise report.",
+  "version": "0.1.0",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Research Assistant",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
